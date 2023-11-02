@@ -74,26 +74,30 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        {/* <Header /> */}
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="John Risser">
-            <View><Text style={styles.labelText}>Role: Provider</Text></View>
-            <View><Text style={styles.labelText}>Id: 24601</Text></View>
+            <View style={styles.section}>
+              <View style={styles.container}>
+                <Text style={styles.labelText}>Role: Provider</Text>
+              </View>
+              <View style={styles.container}>
+                <Text style={styles.labelText}>Id: 24601</Text>
+              </View>
+            </View>
           </Section>
           <Section title="Select a date">
             <TouchableOpacity style={styles.btnSecondary}> 
               <Text style={styles.btnTextSecondary}>
-                Request Changes
+                Select Date
               </Text>
             </TouchableOpacity>
+            <Text style={styles.infoText}>* Reservations must be made at least 24 hours in advance.</Text>
           </Section>
           <Section title="Find a time">
-            <ScrollView
-              horizontal={true}
-            >
+            <ScrollView horizontal={true}>
               <TouchableOpacity style={styles.box}>
                 <Text style={styles.labelText}>12:00pm - 12:15pm</Text>
               </TouchableOpacity>
@@ -117,13 +121,16 @@ function App(): JSX.Element {
               </TouchableOpacity>
             </ScrollView>
           </Section>
-          <Section title="Learn More">
+          <Section title="Finish Up">
+           
             <TouchableOpacity style={styles.btn}> 
               <Text style={styles.btnText}>
                 Request Changes
               </Text>
             </TouchableOpacity>
+            
           </Section>
+          
         </View>
       </ScrollView>
     </SafeAreaView>

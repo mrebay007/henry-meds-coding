@@ -26,7 +26,6 @@ export const styles = StyleSheet.create({
     btnText: {
       flex: 1,
       color: 'white',
-      font: 'Avenir',
       fontWeight: 'bold',
       fontSize: 16,
       lineHeight: 52,
@@ -43,16 +42,13 @@ export const styles = StyleSheet.create({
     btnTextSecondary: {
       flex: 1,
       color: '#00836c',
-      font: 'Avenir',
       fontWeight: 'bold',
       fontSize: 16,
       lineHeight: 52,
       textAlign: 'center',
-  
     },
     headerText: {
       color: 'black',
-      font: 'Avenir',
       fontWeight: 'bold',
       fontSize: 24,
       lineHeight: 52,
@@ -60,11 +56,17 @@ export const styles = StyleSheet.create({
     },
     labelText: {
       color: '#00836c',
-      font: 'Avenir',
       fontSize: 12,
       fontWeight: 'bold',
       textAlign: 'left',
-    },
+    },  
+    infoText: {
+        color: '#CCC',
+        fontSize: 12,
+        fontWeight: 'bold',
+        textAlign: 'left',
+        marginVertical: 8,
+      },
     box: {
       height: 96,
       width: 96,
@@ -72,5 +74,13 @@ export const styles = StyleSheet.create({
       margin: 6,
       borderRadius: 4,
       padding: 8,
+    },
+    container: {
+      display: 'flex',
+      width: '100%',
+      marginVertical: 2,
+    },
+    section: {
+      flexDirection: 'column',
     },
   });
